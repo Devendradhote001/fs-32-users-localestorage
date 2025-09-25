@@ -2,12 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const Register = ({ setToggle, setUsersData, usersData }) => {
-  let {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
+  let data= useForm();
 
   const handleRegisterForm = (data) => {
     let updatedArr = [...usersData, data];
